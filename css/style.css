@@ -1,0 +1,84 @@
+:root {
+	--currency_yellow: #ffecb2;
+}
+
+html {
+	background-color: var(--currency_yellow);
+	overflow-x: hidden;
+}
+
+.login_section_right,
+.login_section_left {
+	height: 100vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.login_section_left {
+	background-color: var(--currency_yellow);
+}
+
+.login_logo_cont_cont {
+	position: absolute;
+	top: 0;
+	transform: translateX(75%);
+}
+.login_logo_cont {
+	width: 10% !important;
+}
+
+.login_logo {
+	object-fit: contain;
+	border-radius: 100%;
+}
+
+.bg_currency_yellow{
+	background: var(--currency_yellow) !important;
+}
+
+.text-currency-yellow {
+	color: var(--currency_yellow) !important;
+}
+
+.login_form:focus {
+	box-shadow: 0 0 0 0.25rem #ffbf0040;
+	border: 1px solid var(--currency_yellow);
+}
+
+.form-check-input:checked {
+	background-color: #ffc412;
+	border-color: var(--currency_yellow);
+}
+
+.line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* 
+TODO: 768px is breakpoint for mobile
+*/
+
+.w-90{
+	width: 90% !important;
+}
+
+.login_mobile_card{
+	transform: translateY(-10%);
+}
+
+@media (max-width: 576px) {
+	.login_large_screen{
+		display: none !important;
+	}
+	.mobile_screen{
+		display: block !important;
+	}
+	body{
+		overflow-x: hidden !important;
+	}
+}
